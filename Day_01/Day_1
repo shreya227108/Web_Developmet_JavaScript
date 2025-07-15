@@ -1,0 +1,82 @@
+Lets start with the introduction and basics of JavaScript.
+
+# What is JavaScript?
+-JavaScript is a scripting language used to create and control dynamic website content.
+-It's one of the core technologies of the web along with HTML CSS.
+
+# What Can JavaScript Do?
+-Add interactivity to web pages (e.g., buttons, forms, animations)
+-Manipulate HTML/CSS (DOM manipulation)
+-Handle events (click, hover, input)
+-Fetch data from servers using AJAX / Fetch API
+-Store data locally with localStorage/sessionStorage
+-Create web apps, games, and even server-side apps (with Node.js)
+
+# How JavaScript is Connected to HTML?
+-JavaScript is connected to HTML using the <script> tag.
+-Ex:
+ <script src="script.js"></script>
+-Lastly when you write your code in your local editor you will get output in console of your html file on the browser.
+
+#Key Concepts:
+| Concept              | Description                                                         |
+| -------------------- | ------------------------------------------------------------------- |
+| **Variables**        | Used to store data (`let`, `const`, `var`)                          |
+| **Functions**        | Reusable blocks of code                                             |
+| **Events**           | Actions like `click`, `hover`, `submit`                             |
+| **DOM**              | Document Object Model - lets you access and change HTML dynamically |
+| **Loops**            | Run a block of code multiple times (`for`, `while`)                 |
+| **Conditions**       | `if`, `else`, `switch` for decision-making                          |
+| **Objects & Arrays** | Ways to organize complex data                                       |
+| **APIs**             | Fetch data or interact with other services                          |
+
+==========================================================================================================================
+
+#Js code
+1.Printing The values
+-console.log("Hello Everyone");
+-console.log('Hello Shreya');
+ 
+#Variables
+-Variables are containers for storage of data.
+-JavaScriptis dynamicallytypes
+i.e. In JavaScriptwe dont have to predefine the type of variable like other languages.
+i.e. we can save any value in any variable apart from its type.
+
+-Ex:
+fullname="Tony Stark";
+age=24;
+price=98.6;
+x=null;(null states that variable contain null value)
+y=undefined;(Undefined states that we dont know what does variable contains)
+isFollow= false;//Boolean= true or false
+
+#Rules of Variables
+1. Variable names are case sensitive: “a” & “A” is different.
+2. Only letters, digits, underscore( _ ) and $ is allowed. (not even space)
+3. Only a letter, underscore( _ ) or $ should be 1st character.
+4. Reserved words cannot be variable names.
+5. Convenstion- In javascript we use camel case for better representation
+
+# let,const,var
+1. var= Variable can be re-declared & updated. A global scope variable.
+2. let= Variable cannot be re-declared but can be updated. A block scope variable.
+3. const= Variable cannot be re-declared or updated. A block scope variable.
+
+======================================================================================
+
+#Data Types
+-Primitive Types : Number, String, Boolean, Undefined, Null, BigInt, Symbol
+-NonPremitive Types : Objects(Collection of values)
+    -objects contain key value pairs
+    -Ex: 
+    const student = {
+        name : "Rahul",
+        age : 20,
+        cgpa : 9.4,
+        ispass : true
+    };
+
+=========================================================================================
+
+  See you tommorow!
