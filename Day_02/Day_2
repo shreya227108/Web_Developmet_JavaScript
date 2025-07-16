@@ -1,0 +1,91 @@
+# Comments is JS
+-Comments are part of codes which is not executed
+-syntax
+//This is single line Comments
+/*This is multi line 
+comment*/
+-Comments are used to write extra information in the coding page.
+
+====================================================================
+
+#Operators
+-Used to perforam some operations on data
+1.Arithmetic Operators
+    -(+, -, *, / )
+    -Modulus(%)(To find remainder of a division)
+    -Exponential(**)(To find the power ofa number)
+
+2.Unary operators
+    -Increment(++)
+        -postincrement(a++)(+1 the value after operation)
+        -preincrement(++a)(+1 the value before operation)
+    -Decrement(--)
+        -postdecrement(a--)(-1 the value after operation)
+        -predecrement(--a)(-1 the the value before operation)
+
+3.Assignment operators
+    -(=)  => equals to
+    -(+=) => a+=4 i.e. a=a+4
+    -(-=) => a-=4 i.e. a=a-4
+    -(%=) => a%=4 i.e. a=a%4
+    -(*=) => a*=4 i.e. a=a*4
+    -(/=) => a/=4 i.e. a=a/4
+    -(**=) => a**=4 i.e. a=a**4
+
+4.Comparison operators
+    -(==) => Equal to
+    -(!=) => Not Equal to
+    -(==) => Equal to
+    -(===) => Equal to with type
+    -(!==) => Not Equal to with type
+    -(>) => greater than
+    -(<) => Less than
+    -(>=) => greater than Equal to
+    -(<=) => less than Equal to
+
+5.Logical operators
+    -(&&) =>Logical AND(Returns true only if both operands are true.)
+    -(||) =>Logical OR(Returns true if at least one operand is true.)
+    -(!) =>Logical NOT(Returns the opposite of the operand.)
+
+6.ternary Operators
+    -syntax;
+        -condition?true output: false output
+        -a?b:c;
+        (Here if a condition is true then b will execute or c will be executed)
+        
+================================================================================
+
+#Conditional Statements
+-To implement some condition in the code
+
+1.if-else
+-syntax
+if(condition){
+    statement;
+}
+else{
+    statement;
+}
+
+2.else-if statement
+-syntax
+if(condition){
+    statement;
+} else if(condition){
+    statement;
+}else {
+    statement;
+}
+
+3.information
+-syntax
+if(condition) statement;
+
+=============================================================================
+
+#Alert 
+-alert is used to add notification in web page
+
+#Prompt
+-prompt gives a notification along with it also takes a input from user.
