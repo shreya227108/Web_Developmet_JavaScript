@@ -1,0 +1,89 @@
+#Loops in javascript
+-Loops are used to execute specific piece of code again and again
+
+1.for Loops
+syntax-
+for(initialize; stoping condition; increment){
+    //code
+}
+------------------------------------------------
+
+2.while Loops
+syntax-
+while(condition){
+    //code
+}
+------------------------------------------------
+
+3.Do while
+syntax-
+do{
+    //code
+}while(condition);
+------------------------------------------------
+
+4.for-of Loops
+-applied on arrays and strings
+-syntax-
+for(let val of strVar){
+    //code
+}
+--------------------------------------------------
+
+5.for-in Loops
+-applied on objects
+-syntax-
+for(let key in objVar){
+    //code
+}
+=================================================
+
+#Strings
+-string is a sequence of characters used to represent text
+-string creation
+    let str ="ShreyaPatil"
+
+-string length
+    str.length
+
+-string indices
+    stt[0], str[2], str[4]
+-----------------------------------------------------------------------------------
+
+#Tamplet literals
+-special syntax for creating strings.
+-They are enclosed by backticks ( ` ` ) instead of single or double quotes.
+-syntax
+    let name = "Shreya";
+    let message = `Hello, ${name}!`;
+    console.log(message); 
+    // Output: Hello, Shreya!
+-Key Features of Template Literals:
+    1.Multi-line strings
+    2.String interpolation (embedding expressions)
+    3.Tagged template literals (Used to parse template literals with a function)
+    4.Expression embedding
+-------------------------------------------------------------------------------------
+
+#String Methods
+-These are buit-in functions to manipulate string
+-Strings are immutable hence while using string methods the copy of original string is created and manipulated
+1. length – Get string length
+2. toUpperCase() / toLowerCase()
+3. includes() – Check if string contains a substring
+4. indexOf() / lastIndexOf() – Find position of a substring
+5. slice(start, end) – Extract part of a string
+6. substring(start, end) – Similar to slice, but can't use
+7. trim() – Remove whitespace from both ends
+8. replace(old, new) – Replace part of the string
+9. split() – Convert string to array
+10.charAt(index) / charCodeAt(index)
+11.repeat(n) – Repeat the string
+12.startsWith() / endsWith()
+
+=========================================================================================
+#Escape characters(/n , /t)
+-these are the notations in program used to create space or new lines in sameline of code
+-Escape characters holds single length using both n and / notations.
+-Ex:
+    console.log("This is /n multi line code");
