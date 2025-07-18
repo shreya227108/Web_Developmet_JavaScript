@@ -1,0 +1,33 @@
+#Arrays
+-Array is a collection of items of any type including String, int, boolean, etc.
+-Arrays are used to store multiple values in a single variable
+-Array has a object datatype.
+-Array are mutable.
+-Create Array
+    -Ex:
+    let marks=[10,20,25,40];
+-Indices
+    -Ex:
+    arr[0],arr[1],arr[2]....
+
+#Array Methods
+| Method       | Description                                |
+| ------------ | ------------------------------------------ |
+| `push()`     | Adds element at the end                    |
+| `pop()`      | Removes last element                       |
+| `shift()`    | Removes first element                      |
+| `unshift()`  | Adds element at the beginning              |
+| `length`     | Returns total number of elements           |
+| `indexOf()`  | Finds index of element                     |
+| `includes()` | Checks if element exists                   |
+| `splice()`   | Adds/removes elements at a specific index  |
+| `slice()`    | Returns a copy of a part of the array      |
+| `forEach()`  | Loops through array                        |
+| `map()`      | Creates a new array by applying a function |
+| `tostring()` | Converts an arry to a string               |
+| `Concat()`   | Join multiple arrays and return result     |               |
+
+#Looping over array
+-Various types of Loops are used to access the elements of an array.
+
+=====================================================================================
