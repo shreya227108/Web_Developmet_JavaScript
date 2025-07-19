@@ -1,0 +1,86 @@
+ #Function
+-Block of code that performs a specific task, can be invoked whenever needed
+-Defining Function
+    function functionName(parameters) {
+        // code to execute
+    }
+
+OR
+
+    function functionName(param1, param2){
+        // code to execute
+    }
+    
+-Calling function
+    functionName();
+
+===============================================================================
+
+#Arrow function
+-shorter and cleaner syntax to write functions
+-syntax-
+    const add = (a, b) => a + b;
+
+'(a, b) => a + b;' this is a arrow function
+'const add' this is a avariable used to save value of aerrow function
+
+================================================================================
+
+#forEach Loop
+-use the forEach() method to iterate over elements in arrays. 
+-It executes a callback function once for each array element.
+-syntax
+array.forEach(function(element, index, array) {
+  // code to execute
+});
+
+-with arrow function:
+array.forEach((element, index, array) => {
+  // code to execute
+});
+
+================================================================================
+
+#Higher order functions or methods
+-A higher-order function is a function that either:
+    -Takes another function as an argument, or
+    -Returns a function as its result.
+
+-Common Higher-Order Array Methods:
+| Method      | Description                             |
+| ----------- | --------------------------------------- |
+| `forEach()` | Executes a function for each array item |
+| `map()`     | Returns a new array with results        |
+| `filter()`  | Returns a new array with matching items |
+| `reduce()`  | Reduces array to a single value         |
+| `sort()`    | Sorts based on a function you provide   |
+| `find()`    | Returns first match based on condition  |
+
+============================================================================================================================
+
+#More Array Methods
+
+1.map()
+-used on arrays to create a new array by applying a function to each element of the original array.
+-syntax-
+    array.map(callback(currentValue, index, array), thisArg)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+2.filter()
+-used on arrays to create a new array that includes only the elements that pass a given test (return true).
+-syntax
+    array.filter(callback(currentValue, index, array), thisArg)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+3.reduce()
+- used on arrays to reduce all elements to a single value by applying a function on each element (from left to right).
+-syntax
+    array.reduce(callback(accumulator, currentValue, index, array), initialValue)
+
+-accumulator: The result from the previous callback (or initialValue on first run).
+-currentValue: The current element in the array.
+-initialValue (optional but recommended): Initial value for the accumulator.
+
+============================================================================================================================
