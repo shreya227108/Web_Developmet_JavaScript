@@ -1,0 +1,11 @@
+Q1. Create a function using the “function” keyword that takes a String as an argument &
+returns the number of vowels in the string.
+
+Q2. Create an arrow function to perform the same task.
+
+Q3. For a given array of numbers, print the square of each value using the forEach loop.
+
+Q4. We are given array of marks of students. Filter our of the marks of students that scored 90+.
+-Use the reduce method to calculate product of all numbers in the array.
+-Take a number n as input from user. Create an array of numbers from 1 to n.
+-Use the reduce method to calculate sum of all numbers in the array.
