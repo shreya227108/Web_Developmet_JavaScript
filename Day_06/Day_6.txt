@@ -1,0 +1,85 @@
+#starter code
+-typically refers to the basic HTML and JavaScript structure you need to begin interacting with the web page elements.
+
+NOTE- To learn the concepts of DOM you should know the structure and working of basic html, css and JavaScript files together to create a webpage.
+
+===================================================================================================================================================
+
+#Window Object
+-The window object is the global object in JavaScript when running in a browser.
+-It represents the browser window or tab, and provides access to everything related to the web page,
+including the DOM, browser functions, and global variables/functions.
+
+-Key Points about window Object:
+| Feature         | Explanation                                                       |
+| --------------- | ----------------------------------------------------------------- |
+| Global Scope    | All global variables and functions become properties of `window`. |
+| DOM Access      | Provides access to `document`, which represents the page content. |
+| Browser Control | Can be used to control window size, alerts, navigation, etc.      |
+
+
+-Commonly Used window Properties and Methods
+| Property / Method                   | Description                                     |
+| ----------------------------------- | ----------------------------------------------- |
+| `window.document`                   | The DOM of the current page.                    |
+| `window.alert()`                    | Displays an alert popup.                        |
+| `window.confirm()`                  | Displays a confirmation dialog.                 |
+| `window.prompt()`                   | Displays a prompt for user input.               |
+| `window.setTimeout()`               | Runs code after a delay.                        |
+| `window.setInterval()`              | Repeats code at intervals.                      |
+| `window.location`                   | Gets or sets the URL.                           |
+| `window.innerWidth` / `innerHeight` | Gets width/height of the window’s content area. |
+| `window.open()`                     | Opens a new browser window or tab.              |
+
+
+-You don’t have to write window. every time. It’s implied in global scope.
+-Ex: 
+    alert("Hello"); // same as window.alert("Hello")
+
+======================================================================================================
+
+#DOM
+It is a programming interface for web documents.
+The DOM represents the structure of an HTML page as a tree of objects,
+where each HTML element is an object you can access and manipulate using JavaScript.
+
+-Think of it Like This:
+Your HTML page:
+
+-html code:
+<body>
+  <h1>Hello World</h1>
+</body>
+DOM representation (in JS memory):
+
+Representation-
+document
+└── body
+    └── h1 (text: "Hello World")
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Accessing html elenemts in JS
+
+| Method                     | Description                                                        | Example                                   |
+| -------------------------- | ------------------------------------------------------------------ | ----------------------------------------- |
+| `getElementById()`         | Gets an element by its **ID**                                      | `document.getElementById("title")`        |
+| `getElementsByClassName()` | Gets all elements with a **class name** (returns HTMLCollection)   | `document.getElementsByClassName("card")` |
+| `getElementsByTagName()`   | Gets all elements with a **tag name** (returns HTMLCollection)     | `document.getElementsByTagName("p")`      |
+| `querySelector()`          | Gets the **first** element that matches a CSS selector             | `document.querySelector(".btn")`          |
+| `querySelectorAll()`       | Gets **all** elements that match a CSS selector (returns NodeList) | `document.querySelectorAll("div.box")`    |
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#DOM Manulation 
+
+#properties
+-Allow you to dynamically access and update elements, their attributes, styles, and content on a web page
+
+| Property      | Description                                                     |
+| ------------- | --------------------------------------------------------------- |
+| `innerHTML`   | Gets/sets HTML content of an element.                           |
+| `innerText`   | Gets/sets visible text (respects styling like `display: none`). |
+| `textContent` | Gets/sets raw text content (ignores styling).                   |
+| `style`       | Directly access or change inline CSS styles.                    |
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
