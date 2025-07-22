@@ -1,0 +1,17 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: #3498db;
+    border: 2px solid #000000;
+    margin: 5px;
+    text-align: center;
+}
+
+    .intro {
+      font-size: 20px;
+      color: blue;
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
