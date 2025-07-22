@@ -1,0 +1,31 @@
+#DOM Manulation 
+
+#Attributes
+1.getAttribute( attr ) - to get the attribute value
+2.setAttribute( attr, value ) - to set the attribute value
+3.removeAttribute(attr)-Removes the specified attribute.
+
+#Style Properties
+node.style - Directly access or change inline CSS styles.
+
+#Insert Elements
+-Create a new HTML element.
+    let el = document.createElement(“div“)
+
+-Add text or content to the element using textContent or innerHTML.
+-Use these methods to insert into the page
+| Method                    | Description                                         |
+| ------------------------- | --------------------------------------------------- |
+| `appendChild()`           | Adds element as last child                          |
+| `prepend()`               | Adds element as first child                         |
+| `insertBefore()`          | Adds before a reference node                        |
+| `insertAdjacentElement()` | Adds relative to another element                    |
+| `append()`                | Similar to `appendChild()` but also accepts strings |
+
+
+#Delete/Remove Element:
+1. removeChild()
+Used on the parent node to remove a specific child node.
+
+2. element.remove()
+Directly removes the element itself (modern & simple).
