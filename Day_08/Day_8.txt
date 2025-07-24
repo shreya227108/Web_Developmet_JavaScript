@@ -1,0 +1,71 @@
+#Events
+-The change in the state of an object is known as an Event
+-Events are fired to notify code of "interesting changes" that may affect code execution.
+
+=================================================================================================
+
+#Common Types of Events
+| Event Type  | Description                                     |
+| ----------- | ----------------------------------------------- |
+| `click`     | Fired when an element is clicked                |
+| `mouseover` | When the mouse pointer enters an element        |
+| `mouseout`  | When the mouse pointer leaves an element        |
+| `keydown`   | When a key is pressed down                      |
+| `keyup`     | When a key is released                          |
+| `change`    | When input element value changes                |
+| `submit`    | When a form is submitted                        |
+| `load`      | When the page or an image loads                 |
+| `input`     | When value of `<input>` or `<textarea>` changes |
+
+================================================================================================
+
+#Event Handling in JS
+-Javascript handing is more proritized than inline handing
+-If we handle same event multiple times it get overwritten.
+
+-There are 3 main ways to handle events in JS:
+
+1. Inline Event Handling (Not recommended)
+-event is written in same html file within tags
+-Ex:
+    <button onclick="sayHello()">Click Me</button>
+-------------------------------------------------------------
+
+2. Using DOM Element Property
+-event is written in js file with DOM Properties
+-Ex:
+   <button id="btn">Click</button>
+
+    <script>
+        const btn = document.getElementById("btn");
+        btn.onclick = function () {
+        alert("Button clicked");
+        };
+    </script> 
+------------------------------------------------------------
+
+3. Using addEventListener() (Best Practice)
+-Ex:
+    <button id="btn">Click</button>
+
+    <script>
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+            alert("Event listener triggered");
+        });
+    </script>
+
+==================================================================================================
+
+#Event Object
+-When an event occurs, an event object is automatically passed to the event handler. 
+-You can use it to get more information:
+    btn.addEventListener("click", function (e) {
+        console.log("Clicked at X:", e.clientX, "Y:", e.clientY);
+    });
+
+-Exaples:
+    -console.log(e);
+    -console.log(e.type);
+    -console.log(e.target);
+    -console.log(e.clientX, e.clientY);
