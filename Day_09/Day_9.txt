@@ -1,0 +1,110 @@
+#Classes and Objects
+
+1.Classes
+A class is a blueprint for creating objects.
+It defines the properties (variables) and methods (functions) that the object will have.
+
+2.constructor
+-The constructor is a special method used to initialize an object created from a class or constructor function.
+-It is automatically called when a new object is created.
+-this refers to the object being created.
+
+-Ex:
+    class ClassName {
+  constructor(param1, param2) {
+    this.property1 = param1;
+    this.property2 = param2;
+  }
+
+  method1() {
+    // code
+  }
+
+  method2() {
+    // code
+  }
+}
+
+----------------------------------------------------------------------------------------------
+
+2.Object
+-An object is an instance of a class. When you create an object, you use the class as a template.
+-JS objects have a special property called prototype.
+-We can set prototype using _ _ proto _ _
+-If object & prototype have same method,
+object’s method will be used.
+
+-Syntax:
+    const obj = new ClassName("value1", "value2");
+
+===================================================================================================
+
+#Inheritance in JS
+-Inheritance lets one “class” or constructor function reuse code (properties & methods) defined in another.
+-JavaScript supports inheritance both in the classic prototype‑based style (ES5 and before) and in the newer class‑based syntax.
+-If Child & Parent have same method, child’s method will be used. [Method Overriding]
+
+==================================================================================================================================
+
+#Super Keyword
+-The super keyword is used to call the constructor of its parent class to access the parent's
+properties and methods.
+-syntax
+    super( args ) // calls Parent‘s constructor
+    super.parentMethod( args )
+
+==================================================================================================================================
+
+#Error Handling
+-JavaScript provides several mechanisms to handle errors gracefully, so your program doesn't crash unexpectedly.
+-Types of Errors in JavaScript
+    1.Syntax Error – Code cannot be parsed (e.g., missing brackets).
+        console.log("Hello"  // SyntaxError: missing ) after argument list
+
+    2.Reference Error – Accessing a variable that doesn’t exist.
+        console.log(x);  // ReferenceError: x is not defined
+
+    3.Type Error – Performing an invalid operation on a data type.
+        null.f();  // TypeError: Cannot read properties of null
+      
+1.try...catch Block
+-Used to catch and handle runtime errors.
+-syntax:
+      try {
+        // code that may throw error
+      } catch (error) {
+        // code to handle the error
+      } finally {
+        // optional block that always runs
+      }
+--------------------------------------------------------------
+
+2.throw Keyword
+-Used to manually throw custom errors.
+-syntax:
+      function divide(a, b) {
+        if (b === 0) {
+          throw new Error("Cannot divide by zero");
+        }
+        return a / b;
+      }
+
+      try {
+        console.log(divide(4, 0));
+      } catch (err) {
+        console.log(err.message);
+      }
+
+------------------------------------------------------------
+
+3.finally Block
+-The finally block always runs, whether or not an error occurred.
+-syntax: 
+      try {
+        console.log("Start");
+        throw new Error("Oops!");
+      } catch (err) {
+        console.log("Caught error:", err.message);
+      } finally {
+        console.log("Always runs");
+      }
