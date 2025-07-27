@@ -1,0 +1,79 @@
+#Synchronous
+synchronous means the code runs in a particular sequence of instructions given in the program.
+Each instruction waits for the previous instruction to complete its execution.
+
+#Asynchronous
+Due to synchronous programming, sometimes imp instructions get
+blocked due to some previous instructions, which causes a delay in the UI.
+Asynchronous code execution allows to execute next instructions
+immediately and doesn't block the flow.
+
+===================================================================================================
+
+#Callbacks
+-A callback is a function passed as an argument to another function.
+
+#Callback hell
+-Callback Hell (also known as the "Pyramid of Doom") happens when callbacks are nested within
+callbacks many levels deep, making code:
+    -hard to read,
+    -hard to maintain,
+    -and prone to bugs.
+-Problems with Callback Hell:
+    -Deep nesting.
+    -Difficult error handling.
+    -Code becomes unreadable.
+-Fixed using Promises, Async/Await, Named Functions
+
+==========================================================================================================
+
+#Promises
+-A Promise is an object representing the eventual completion (or failure) of an asynchronous operation.
+-States of a Promise:
+        1.Pending – Initial state, not fulfilled or rejected.
+        2.Fulfilled – The operation completed successfully.
+        3.Rejected – The operation failed.
+-syntax:
+    let promise = new Promise( (resolve, reject) => { .... } )
+
+-NOTE: *resolve & reject are callbacks provided by JS
+
+==========================================================================================================
+
+#Async/Await
+-async/await is syntactic sugar over Promises.
+-It makes asynchronous code look and behave like synchronous code — easier to read and maintain.
+
+| Keyword | Meaning                                         |
+| ------- | ----------------------------------------------- |
+| `async` | Declares a function that returns a promise      |
+| `await` | Pauses the execution until the promise resolves |
+
+Notes:
+    -You must use await only inside async functions.
+    -If you forget await, the function won’t pause — it will just return a pending promise.
+    -Use try...catch to handle errors properly.
+
+==============================================================================================================
+
+#Async/Await vs Promises
+| Feature        | Promise                | Async/Await                     |
+| -------------- | ---------------------- | ------------------------------- |
+| Syntax         | `.then()` / `.catch()` | `async` / `await` + `try/catch` |
+| Readability    | Can become nested      | Linear, clean, like sync code   |
+| Error Handling | `.catch()`             | `try` / `catch`                 |
+| Return Value   | Returns Promise        | Resolves to value               |
+
+==============================================================================================================
+
+#IIFE : Immediately Invoked Function Expression
+-It’s a function that runs as soon as it is defined.
+-Benifit: Creates private scope, avoids polluting global namespace
+-syntax
+    (function() {
+        // code inside runs immediately
+        console.log("IIFE executed!");
+    })();
+
+==============================================================================================================
+  
